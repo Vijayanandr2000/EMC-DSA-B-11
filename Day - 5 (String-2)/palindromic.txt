@@ -1,0 +1,118 @@
+PALINDROMIC STRING PROBLEMS – PRACTICE LIST
+==========================================
+
+Core Idea: Expand Around Center / Palindrome Recognition
+
+
+1) 647. Palindromic Substrings
+Link: https://leetcode.com/problems/palindromic-substrings/
+Idea:
+Count all palindromic substrings by expanding around every possible center.
+Consider both odd-length and even-length palindromes.
+
+
+2) 5. Longest Palindromic Substring
+Link: https://leetcode.com/problems/longest-palindromic-substring/
+Idea:
+For each index (and between indices), expand outward while characters match.
+Track the maximum length palindrome found.
+
+
+--------------------------------------------------
+
+Palindrome Partitioning (Backtracking + DP)
+
+
+3) 131. Palindrome Partitioning
+Link: https://leetcode.com/problems/palindrome-partitioning/
+Idea:
+Use backtracking to try all partitions.
+Only cut when the current substring is a palindrome.
+
+
+4) 132. Palindrome Partitioning II
+Link: https://leetcode.com/problems/palindrome-partitioning-ii/
+Idea:
+Use DP to compute minimum cuts needed so every substring is a palindrome.
+Precompute palindrome table for optimization.
+
+
+5) 1745. Palindrome Partitioning IV
+Link: https://leetcode.com/problems/palindrome-partitioning-iv/
+Idea:
+Check if string can be split into exactly three non-empty palindromic substrings.
+Use DP or backtracking with palindrome checking.
+
+
+--------------------------------------------------
+
+DP on Palindromes
+
+
+6) 516. Longest Palindromic Subsequence
+Link: https://leetcode.com/problems/longest-palindromic-subsequence/
+Idea:
+Use DP on string indices.
+If characters match, extend length; otherwise take max of skipping one side.
+
+
+7) 730. Count Different Palindromic Subsequences
+Link: https://leetcode.com/problems/count-different-palindromic-subsequences/
+Idea:
+Advanced DP problem.
+Count distinct palindromic subsequences using character boundaries.
+
+
+--------------------------------------------------
+
+Advanced / Optimization Problems
+
+
+8) 214. Shortest Palindrome
+Link: https://leetcode.com/problems/shortest-palindrome/
+Idea:
+Find longest palindromic prefix.
+Add remaining characters in front to make the string a palindrome.
+
+
+9) 336. Palindrome Pairs
+Link: https://leetcode.com/problems/palindrome-pairs/
+Idea:
+For each word, split into prefix and suffix.
+Check if one part is palindrome and the other exists reversed.
+
+
+10) 1960. Maximum Product of the Length of Two Palindromic Substrings
+Link: https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-substrings/
+Idea:
+Precompute longest palindrome ending at each index.
+Choose two non-overlapping palindromes with maximum product.
+
+
+--------------------------------------------------
+
+Easy Warm-Up Palindrome Problems
+
+
+11) 125. Valid Palindrome
+Link: https://leetcode.com/problems/valid-palindrome/
+Idea:
+Two-pointer approach ignoring non-alphanumeric characters.
+
+
+12) 680. Valid Palindrome II
+Link: https://leetcode.com/problems/valid-palindrome-ii/
+Idea:
+Two pointers with at most one allowed deletion when mismatch occurs.
+
+
+13) 2108. Find First Palindromic String in the Array
+Link: https://leetcode.com/problems/find-first-palindromic-string-in-the-array/
+Idea:
+Iterate through array and check each string for palindrome property.
+
+
+--------------------------------------------------
+
+Suggested Learning Order:
+647 -> 5 -> 131 -> 132 -> 516 -> 214 -> 336
